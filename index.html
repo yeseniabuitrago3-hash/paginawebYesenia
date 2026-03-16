@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Dalgy Yesenia Buitrago· Dev</title>
+    <!-- Enlace al CSS principal -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h2 class="logo">&lt;Dalgy.dev/&gt;</h2>
+        <nav class="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="Hola 👋">Hola 👋</h1>
+                <h2>Soy <span class="highlight">Dalgy Yesenia</span></h2>
+                <p>Tecnóloga en Análisis y Desarrollo de Software (ADSO)</p>
+                <button class="btn btn-primary" onclick="irProyectos()">Ver mis proyectos</button>
+            </div>
+            <div class="hero-image">
+                <img src="perfil.png" alt="Foto de Dalgy Yesenia" class="foto">
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p><strong>Nombre:</strong> Dalgy Yesenia Buitrago Contreras</p>
+                    <p><strong>Edad:</strong> 20 años</p>
+                    <p><strong>Programa:</strong> Tecnólogo en Análisis y Desarrollo de Software (ADSO)</p>
+                    <p><strong>Institución:</strong> SENA</p>
+                    <p class="descripcion-larga">
+                        Soy estudiante apasionada por la tecnología y la creación de soluciones digitales. Me considero una persona responsable, colaborativa y con gran capacidad para aprender y adquirir nuevos conocimientos. Me gusta trabajar en equipo, resolver problemas y desarrollar soluciones tecnológicas que ayuden a mejorar procesos y facilitar el uso de aplicaciones digitales.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2 class="section-title">Servicios que ofrezco</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Diseño UI / UX</h3>
+                    <p>Diseño de prototipos y mockups de páginas web y aplicaciones, enfocándome en la experiencia de usuario.</p>
+                </div>
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación y desarrollo de páginas web modernas, responsivas y optimizadas.</p>
+                </div>
+                <div class="card">
+                    <h3>Programación</h3>
+                    <p>Desarrollo de lógica de negocio y algoritmos con diferentes lenguajes de programación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="tecnologias">
+            <h2 class="section-title">Tecnologías y herramientas</h2>
+            <div class="tech-grid">
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">JavaScript</div>
+                <div class="tech">Python</div>
+                
+                <div class="tech">Figma</div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <h2 class="section-title">Proyecto Destacado</h2>
+            
+            <div class="proyecto-unico">
+                <!-- Cabecera del proyecto -->
+                <div class="proyecto-header">
+                    <h3 class="proyecto-titulo">Plataforma RENOVA</h3>
+                    <p class="proyecto-subtitulo">Sistema de Gestión de Reciclaje</p>
+                </div>
+
+                <!-- Descripción del proyecto -->
+                <div class="proyecto-descripcion">
+                    <p>
+                        Plataforma web integral para la gestión de reciclaje que permite a los usuarios 
+                        consultar materiales reciclables, localizar centros de recolección cercanos y 
+                        llevar un registro de su impacto ambiental. Desarrollado como proyecto académico 
+                        en el SENA.
+                    </p>
+                </div>
+
+                <!-- Tecnologías utilizadas en el proyecto -->
+                <div class="proyecto-tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+
+                <!-- Galería de imágenes del proyecto -->
+                <div class="galeria-container">
+                    <div class="galeria-principal">
+                        <img id="imagen-principal" src="proyecto1.jpg" alt="Vista principal de la plataforma RENOVA">
+                    </div>
+                    
+                    <div class="galeria-miniaturas">
+                        <img class="miniatura active" src="proyecto1.jpg" alt="Vista principal" onclick="cambiarImagen(this)">
+                        <img class="miniatura" src="proyecto2.jpg" alt="Dashboard de usuario" onclick="cambiarImagen(this)">
+                        <img class="miniatura" src="proyecto3.jpg" alt="Mapa de centros de reciclaje" onclick="cambiarImagen(this)">
+                        <img class="miniatura" src="proyecto4.jpg" alt="Catálogo de materiales" onclick="cambiarImagen(this)">
+                        <img class="miniatura" src="proyecto5.jpg" alt="Prototipo en Figma" onclick="cambiarImagen(this)">
+                        <img class="miniatura" src="proyecto7.jpg" alt="Estadísticas de reciclaje" onclick="cambiarImagen(this)">
+                    </div>
+                </div>
+
+                <!-- Características del proyecto -->
+                <div class="proyecto-caracteristicas">
+                    <h4>Características principales</h4>
+                    <ul>
+                        <li>📍 Geolocalización de centros de reciclaje cercanos</li>
+                        <li>♻️ Catálogo completo de materiales reciclables</li>
+                        <li>📊 Dashboard con estadísticas de impacto ambiental</li>
+                        <li>👤 Sistema de perfiles de usuario</li>
+                        <li>📱 Mapa de cobertura zonal</li>
+                        <li>🔍 Usuarios activos</li>
+                    </ul>
+                </div>
+
+               
+
+        <section id="contacto" class="contacto">
+            <h2 class="section-title">Ponte en contacto</h2>
+            <p>¿Listo para trabajar juntos en tu próximo proyecto?</p>
+            <p>correo:yeseniabuitrago3@gmail.com</p>
+            <p>Github:yeseniabuitrago3-hash</p>
+             <p>Telefono:3132696614</p>
+
+
+            <button class="btn btn-secondary" onclick="contacto()">Contactar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 · Dalgy Yesenia Buitrago Contreras · <span class="neon-text">construyendo el futuro</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
